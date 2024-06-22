@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { addIcons } from 'ionicons';
+import { cartOutline, scanOutline } from 'ionicons/icons';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor() {
+    this.addAllIcons();
+  }
 
+  addAllIcons() {
+    addIcons({
+      cartOutline,
+      scanOutline
+    })
+  }
 }
